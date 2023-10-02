@@ -2,7 +2,7 @@ This app requires an API token to work.
 
 Please create a `.env` file in the root directory with a `VITE_API_TOKEN` key and the value of the API token.
 
-So it'd look like:
+So it should look like:
 
 `VITE_API_TOKEN=eyJhb...`
 
