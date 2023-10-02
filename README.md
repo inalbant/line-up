@@ -1,27 +1,11 @@
-# React + TypeScript + Vite
+This app requires an API token to work.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Please create a `.env` file in the root directory with a `VITE_API_TOKEN` key and the value of the API token.
 
-Currently, two official plugins are available:
+So it'd look like:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+`VITE_API_TOKEN=eyJhb...`
 
-## Expanding the ESLint configuration
+And then you can run the app with `npm run dev`.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+p.s. This app is tested with Node v20 so please use v20.
