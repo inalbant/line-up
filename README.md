@@ -6,6 +6,6 @@ So it should look like:
 
 `VITE_API_TOKEN=eyJhb...`
 
-And then you can run the app with `npm run dev`.
+And then you can run the app with `npm run dev`, after installing the dependencies with `npm install`.
 
 p.s. This app is tested with Node v20 so please use v20.
