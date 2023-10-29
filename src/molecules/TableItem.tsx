@@ -15,8 +15,8 @@ export function TableItem({
   bookingFee,
 }: TicketItemProps) {
   return (
-    <div className="flex justify-between py-4">
-      <div className="flex justify-between w-full max-w-md">
+    <div className="flex justify-between py-4 w-full">
+      <div className="flex justify-between w-full max-w-lg mr-4">
         <TicketBand title={ticketTitle} description={ticketDescription} />
         <TicketPrice price={ticketPrice} bookingFee={bookingFee} />
       </div>

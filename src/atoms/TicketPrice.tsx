@@ -1,4 +1,4 @@
-import { pounds } from "../utils/currencyFormat";
+import { formatCurrency } from "../utils";
 
 type TicketPriceProps = {
   price: number;
@@ -8,8 +8,8 @@ type TicketPriceProps = {
 export function TicketPrice({ price, bookingFee }: TicketPriceProps) {
   return (
     <div className="text-right">
-      <p>{pounds.format(price)}</p>
-      <p>(+ {pounds.format(bookingFee)} fee)</p>
+      <p>{formatCurrency(price)}</p>
+      <p>(+ {formatCurrency(bookingFee)} fee)</p>
     </div>
   );
 }

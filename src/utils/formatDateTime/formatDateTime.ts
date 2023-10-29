@@ -1,4 +1,8 @@
-export function formatDateAndTime(date: string, time: string) {
+export function formatDateTime(date?: string, time?: string) {
+  if (!date || !time) {
+    return "";
+  }
+
   const dateObject = new Date(`${date}:${time}`);
 
   const options: Intl.DateTimeFormatOptions = {
